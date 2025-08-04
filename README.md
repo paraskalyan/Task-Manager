@@ -33,5 +33,24 @@ Includes concurrency control to ensure a task can only be worked on by one user 
 - **Vite** (Build tool)
 
 ---
+## 🔹 Functionality
 
-## 📂 Project Structure
+- **Role Selection & Switching**  
+  Choose Manager or User on start. Switch roles anytime with the "Switch Role" button. Tasks remain saved when switching.
+
+- **Manager**  
+  Can create tasks with name, description, and number of uploads. Tasks are visible to all users.
+
+- **User**  
+  Can see all tasks. Start a task to lock it for others until completed. Upload exactly the required number of images to submit.
+
+- **Image Upload**  
+  Accepts only images. Shows count of selected files. Blocks submission if the count doesn't match the task requirement.
+
+- **Concurrency**  
+  Once a task is started, it becomes unavailable to others until finished.
+
+- **Modal with Blur**  
+  When a modal is open, background is dimmed and blurred for better focus.
+
+
