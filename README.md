@@ -1,12 +1,37 @@
-# React + Vite
+# Task Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple role-based task management portal built with **React** and **Tailwind CSS**, where a **Manager** can create tasks and a **User** can start and complete them.  
+Includes concurrency control to ensure a task can only be worked on by one user at a time.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+### 👨‍💼 Manager
+- Create tasks with:
+  - Task name
+  - Description
+  - Number of uploads required (integer)
+- View all created tasks
+- Tasks are shared with all users in real time
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 👤 User
+- View all available tasks
+- Start a task (locks it for other users)
+- Upload the exact number of images required by the task
+- Submit completed tasks
+
+### 🔒 Concurrency
+- Once a task is started by a user, it becomes **unavailable** to others until completed.
+
+---
+
+## 🛠 Tech Stack
+- **React** (UI)
+- **Tailwind CSS** (Styling)
+- **Lucide Icons** (Icons)
+- **Vite** (Build tool)
+
+---
+
+## 📂 Project Structure
